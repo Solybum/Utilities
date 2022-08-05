@@ -11,7 +11,10 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Description>Collection of helper classes</Description>
     <Copyright>Copyright © Soleil Rojas 2022</Copyright>
-    <PackageProjectUrl>https://github.com/Solybum/Utilities</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Solybum/Utilities/ByteArray</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/Solybum/Utilities</RepositoryUrl>
+	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+	<PackageLicenseExpression>MIT</PackageLicenseExpression>
 	<Version>1.2.3</Version>
   </PropertyGroup>
 
