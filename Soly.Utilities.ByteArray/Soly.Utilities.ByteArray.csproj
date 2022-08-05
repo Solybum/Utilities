@@ -9,13 +9,13 @@
     <AssemblyName>$(MSBuildProjectName)</AssemblyName>
     <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Description>Collection of helper classes</Description>
+    <Description>Byte array wrapper to ease data type conversions</Description>
     <Copyright>Copyright © Soleil Rojas 2022</Copyright>
     <PackageProjectUrl>https://github.com/Solybum/Utilities/ByteArray</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Solybum/Utilities</RepositoryUrl>
 	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Version>1.2.3</Version>
+	<Version>1.2.4</Version>
   </PropertyGroup>
 
   <ItemGroup>
