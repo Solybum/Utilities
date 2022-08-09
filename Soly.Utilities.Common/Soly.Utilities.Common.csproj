@@ -1,26 +1,26 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Authors>Soleil Rojas</Authors>
-    <PackageId>$(MSBuildProjectName)</PackageId>
-    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
-    <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Description>Collection of helper classes</Description>
-    <Copyright>Copyright © Soleil Rojas 2022</Copyright>
-    <PackageProjectUrl>https://github.com/Solybum/Utilities/Common</PackageProjectUrl>
-	<RepositoryUrl>https://github.com/Solybum/Utilities</RepositoryUrl>
-	<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-	<PackageLicenseExpression>MIT</PackageLicenseExpression>
-	<Version>1.0.3</Version>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<Authors>Soleil Rojas</Authors>
+		<PackageId>$(MSBuildProjectName)</PackageId>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Description>Collection of helper classes</Description>
+		<Copyright>Copyright © Soleil Rojas 2022</Copyright>
+		<PackageProjectUrl>https://github.com/Solybum/Utilities/Common</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Solybum/Utilities</RepositoryUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Version>1.0.4</Version>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+	</ItemGroup>
 
 </Project>
