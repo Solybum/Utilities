@@ -10,9 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soly.Utilities.Common", "Soly.Utilities.Common\Soly.Utilities.Common.csproj", "{F2D97633-5039-45B8-8BD4-6C4D427B0A26}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{BFB98CB7-56DC-4383-92C2-3763B7DA5CB7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soly.Utilities.ByteArray", "Soly.Utilities.ByteArray\Soly.Utilities.ByteArray.csproj", "{AC3ED641-F353-4286-AB80-03D77FB6DF39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soly.Utilities.Common", "src\Soly.Utilities.Common\Soly.Utilities.Common.csproj", "{F2D97633-5039-45B8-8BD4-6C4D427B0A26}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soly.Utilities.ByteArray", "src\Soly.Utilities.ByteArray\Soly.Utilities.ByteArray.csproj", "{AC3ED641-F353-4286-AB80-03D77FB6DF39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +33,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F2D97633-5039-45B8-8BD4-6C4D427B0A26} = {BFB98CB7-56DC-4383-92C2-3763B7DA5CB7}
+		{AC3ED641-F353-4286-AB80-03D77FB6DF39} = {BFB98CB7-56DC-4383-92C2-3763B7DA5CB7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FC21169F-4EFA-436F-9346-9445B5073D2B}
