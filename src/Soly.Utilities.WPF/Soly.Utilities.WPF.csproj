@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<UseWPF>true</UseWPF>
+		<Authors>Soleil Rojas</Authors>
+		<PackageId>$(MSBuildProjectName)</PackageId>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Description>Collection of helper classes for WPF</Description>
+		<Copyright>Copyright © Soleil Rojas 2022</Copyright>
+		<PackageProjectUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.WPF</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.WPF</RepositoryUrl>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Version>1.0.0</Version>
+	</PropertyGroup>
+
+</Project>
