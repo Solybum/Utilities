@@ -11,8 +11,8 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Description>Collection of helper classes</Description>
 		<Copyright>Copyright © Soleil Rojas 2022</Copyright>
-		<PackageProjectUrl>https://github.com/Solybum/Utilities/Common</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/Solybum/Utilities</RepositoryUrl>
+		<PackageProjectUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Common</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Common</RepositoryUrl>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Version>1.0.6</Version>
