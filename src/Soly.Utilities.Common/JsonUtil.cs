@@ -16,6 +16,7 @@ public static class JsonUtil
             MaxDepth = maxDepth,
             WriteIndented = format,
         };
+        options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
         return JsonSerializer.Serialize(o, options);
     }
     public static T? Deserialize<T>(string json)
@@ -27,6 +28,7 @@ public static class JsonUtil
             ReadCommentHandling = JsonCommentHandling.Skip,
             ReferenceHandler = ReferenceHandler.Preserve,
         };
+        options.Converters.Add(new JsonStringEnumConverter(JsonNamingPolicy.CamelCase));
         return JsonSerializer.Deserialize<T>(json, options);
     }
 }
