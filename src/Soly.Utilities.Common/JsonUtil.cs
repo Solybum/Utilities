@@ -1,33 +1,32 @@
-﻿using Newtonsoft.Json;
-using System.Text;
+﻿using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace Soly.Utilities.Common;
 public static class JsonUtil
 {
-    public static string Serialize(object data, bool format = false)
+    public static string Serialize(object o, bool format = false, int maxDepth = 0)
     {
-        StringBuilder sb = new();
-        JsonTextWriter jw = new(new StringWriter(sb));
-        JsonSerializer js = new();
-
-        if (format)
+        JsonSerializerOptions options = new()
         {
-            jw.Formatting = Formatting.Indented;
-            jw.Indentation = 1;
-            jw.IndentChar = '\t';
-        }
+            AllowTrailingCommas = true,
+            NumberHandling = JsonNumberHandling.AllowNamedFloatingPointLiterals | JsonNumberHandling.AllowReadingFromString,
+            ReadCommentHandling = JsonCommentHandling.Skip,
+            ReferenceHandler = ReferenceHandler.Preserve,
 
-        js.Serialize(jw, data);
-
-        return sb.ToString();
-    }
-    public static T? Deserialize<T>(byte[] data, int offset, int count)
-    {
-        using StreamReader sr = new(new MemoryStream(data, offset, count));
-        JsonSerializer json = new()
-        {
-            ObjectCreationHandling = ObjectCreationHandling.Replace
+            MaxDepth = maxDepth,
+            WriteIndented = format,
         };
-        return json.Deserialize<T>(new JsonTextReader(sr));
+        return JsonSerializer.Serialize(o, options);
+    }
+    public static T? Deserialize<T>(string json)
+    {
+        JsonSerializerOptions options = new()
+        {
+            AllowTrailingCommas = true,
+            NumberHandling = JsonNumberHandling.AllowNamedFloatingPointLiterals | JsonNumberHandling.AllowReadingFromString,
+            ReadCommentHandling = JsonCommentHandling.Skip,
+            ReferenceHandler = ReferenceHandler.Preserve,
+        };
+        return JsonSerializer.Deserialize<T>(json, options);
     }
 }
