@@ -27,7 +27,7 @@ public partial class ByteArray
         }
         set
         {
-            Guard.IsInRange(value, 0, this.buffer.Length);
+            Guard.IsInRange(value, 0, this.buffer.Length + 1);
             this.position = value;
         }
     }
