@@ -15,12 +15,8 @@
 		<RepositoryUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Common</RepositoryUrl>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
-		<Version>1.0.8</Version>
+		<Version>1.1.0</Version>
+		<PackageOutputPath>$(SolutionDir).build\$(Configuration)</PackageOutputPath>
 	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-	</ItemGroup>
 
 </Project>
