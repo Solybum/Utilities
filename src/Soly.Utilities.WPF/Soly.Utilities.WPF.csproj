@@ -17,6 +17,7 @@
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Version>1.0.0</Version>
+		<PackageOutputPath>$(SolutionDir).build\$(Configuration)</PackageOutputPath>
 	</PropertyGroup>
 
 </Project>
