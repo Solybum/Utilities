@@ -9,21 +9,18 @@ public static class ProcessUtil
     /// <param name="fileName"></param>
     /// <param name="arguments"></param>
     /// <param name="asAdmin"></param>
-    /// <exception cref="InvalidOperationException"></exception>
-    /// <exception cref="System.ComponentModel.Win32Exception"></exception>
-    /// <exception cref="ObjectDisposedException"></exception>
-    /// <exception cref="PlatformNotSupportedException"></exception>
-    public static void Start(string fileName, string arguments, bool asAdmin)
+    public static Process Start(string fileName, string arguments = "", bool asAdmin = false)
     {
-        Process p = new();
-        p.StartInfo.FileName = fileName;
-        p.StartInfo.Arguments = arguments;
-        p.StartInfo.UseShellExecute = true;
+        Process process = new();
+        process.StartInfo.FileName = fileName;
+        process.StartInfo.Arguments = arguments;
+        process.StartInfo.UseShellExecute = true;
         if (asAdmin)
         {
-            p.StartInfo.Verb = "runas";
+            process.StartInfo.Verb = "runas";
         }
 
-        p.Start();
+        process.Start();
+        return process;
     }
 }

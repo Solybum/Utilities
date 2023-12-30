@@ -17,6 +17,14 @@
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<Version>1.1.0</Version>
 		<PackageOutputPath>$(SolutionDir).build\$(Configuration)</PackageOutputPath>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
 	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Update="readme.md">
+	    <PackagePath>\</PackagePath>
+	    <Pack>True</Pack>
+	  </None>
+	</ItemGroup>
 
 </Project>
