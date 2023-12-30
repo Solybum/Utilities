@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>Soleil Rojas</Authors>
+    <PackageId>$(MSBuildProjectName)</PackageId>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+    <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Description>Collection of helper classes for registry access in Windows</Description>
+    <Copyright>Copyright © Soleil Rojas 2023</Copyright>
+    <PackageProjectUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Registry</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Registry</RepositoryUrl>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <Version>1.0.0</Version>
+    <PackageOutputPath>$(SolutionDir).build\$(Configuration)</PackageOutputPath>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Update="readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
