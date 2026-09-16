@@ -1,6 +1,9 @@
-﻿using System.Reflection;
+﻿using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.InteropServices;
 
 namespace Soly.Utilities.Common;
+
 public static class FileSystemUtil
 {
     public static DirectoryInfo GetAppDataDirectory(Assembly assembly)
@@ -17,5 +20,18 @@ public static class FileSystemUtil
         FileInfo result;
         result = new FileInfo(Path.Combine(path));
         return result;
+    }
+
+    public static bool OpenFile(string filePath)
+    {
+        try
+        {
+            ProcessUtil.Start(filePath, useShellExecute: true);
+            return true;
+        }
+        catch (Exception ex)
+        {
+            throw new InvalidOperationException($"Failed to open file: {filePath}", ex);
+        }
     }
 }
