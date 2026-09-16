@@ -1,33 +1,17 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net10.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
-        <Authors>Soleil Rojas</Authors>
-        <PackageId>$(MSBuildProjectName)</PackageId>
-        <AssemblyName>$(MSBuildProjectName)</AssemblyName>
-        <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
-        <Description>Json helper class</Description>
-        <Copyright>Copyright © Soleil Rojas 2023</Copyright>
-        <PackageProjectUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Json</PackageProjectUrl>
-        <RepositoryUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Json</RepositoryUrl>
-        <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <!-- Targeting and compiler settings -->
+        <!-- Assembly and package identity -->
         <Version>2.0.0</Version>
-        <PackageOutputPath>$(SolutionDir).build\$(Configuration)</PackageOutputPath>
-        <PackageReadmeFile>readme.md</PackageReadmeFile>
+
+        <!-- Package metadata -->
+        <Description>Json helper class</Description>
+        <PackageProjectUrl>https://github.com/Solybum/Utilities/tree/main/src/Soly.Utilities.Json</PackageProjectUrl>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <None Update="readme.md">
-            <PackagePath>\</PackagePath>
-            <Pack>True</Pack>
-        </None>
     </ItemGroup>
 
 </Project>
