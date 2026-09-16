@@ -7,7 +7,7 @@
         <Nullable>enable</Nullable>
 
         <!-- Assembly and package identity -->
-        <Version>2.1.2</Version>
+        <Version>2.2.0</Version>
         <PackageId>$(MSBuildProjectName)</PackageId>
         <AssemblyName>$(MSBuildProjectName)</AssemblyName>
         <RootNamespace>$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
