@@ -14,12 +14,12 @@ public partial class ByteArray
         return result;
     }
 
-    public void Write(sbyte value)
+    public void WriteI8(sbyte value)
     {
-        this.Write(value, this.position);
+        this.WriteI8(value, this.position);
         this.position += 1;
     }
-    public void Write(sbyte value, int position)
+    public void WriteI8(sbyte value, int position)
     {
         this.buffer[position] = (byte)value;
     }

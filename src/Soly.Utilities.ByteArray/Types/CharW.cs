@@ -1,4 +1,4 @@
-﻿namespace Soly.Utilities.ByteArray;
+namespace Soly.Utilities.ByteArray;
 
 public partial class ByteArray
 {

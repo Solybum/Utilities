@@ -1,12 +1,12 @@
 ﻿namespace Soly.Utilities.ByteArray;
 public partial class ByteArray
 {
-    public void Read(byte[] array, int index, int length)
+    public void ReadArray(byte[] array, int index, int length)
     {
-        this.Read(array, index, length, this.position);
+        this.ReadArray(array, index, length, this.position);
         this.position += (length * 1);
     }
-    public void Read(byte[] array, int index, int length, int position)
+    public void ReadArray(byte[] array, int index, int length, int position)
     {
         if (array == null)
         {
@@ -22,12 +22,12 @@ public partial class ByteArray
         }
     }
 
-    public void Write(byte[] array, int index, int length)
+    public void WriteArray(byte[] array, int index, int length)
     {
-        this.Write(array, index, length, this.position);
+        this.WriteArray(array, index, length, this.position);
         this.position += (length * 1);
     }
-    public void Write(byte[] array, int index, int length, int position)
+    public void WriteArray(byte[] array, int index, int length, int position)
     {
         if (array == null)
         {
@@ -37,7 +37,7 @@ public partial class ByteArray
         length += index;
         while (index < length)
         {
-            this.Write(array[index], position);
+            this.WriteU8(array[index], position);
             position += 1;
             index++;
         }

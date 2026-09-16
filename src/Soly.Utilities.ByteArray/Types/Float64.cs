@@ -44,21 +44,21 @@ public partial class ByteArray
         return result;
     }
 
-    public void Write(double value)
+    public void WriteF64(double value)
     {
-        this.Write(value, this.position, this.Endianness);
+        this.WriteF64(value, this.position, this.Endianness);
         this.position += 8;
     }
-    public void Write(double value, int position)
+    public void WriteF64(double value, int position)
     {
-        this.Write(value, position, this.Endianness);
+        this.WriteF64(value, position, this.Endianness);
     }
-    public void Write(double value, Endianness endianness)
+    public void WriteF64(double value, Endianness endianness)
     {
-        this.Write(value, this.position, endianness);
+        this.WriteF64(value, this.position, endianness);
         this.position += 8;
     }
-    public void Write(double value, int position, Endianness endianness)
+    public void WriteF64(double value, int position, Endianness endianness)
     {
         lock (this.temp)
         {

@@ -42,11 +42,6 @@ public partial class ByteArray
     }
     public void WriteStringA(string text, int index, int length, bool nullTerminated, int position)
     {
-        if (text == null)
-        {
-            throw new ArgumentNullException(nameof(text));
-        }
-
         length += index;
         while ((index < length) && (index < text.Length))
         {

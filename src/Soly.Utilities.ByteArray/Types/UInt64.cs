@@ -47,21 +47,21 @@ public partial class ByteArray
         return result;
     }
 
-    public void Write(ulong value)
+    public void WriteU64(ulong value)
     {
-        this.Write(value, this.position, this.Endianness);
+        this.WriteU64(value, this.position, this.Endianness);
         this.position += 8;
     }
-    public void Write(ulong value, int position)
+    public void WriteU64(ulong value, int position)
     {
-        this.Write(value, position, this.Endianness);
+        this.WriteU64(value, position, this.Endianness);
     }
-    public void Write(ulong value, Endianness endianness)
+    public void WriteU64(ulong value, Endianness endianness)
     {
-        this.Write(value, this.position, endianness);
+        this.WriteU64(value, this.position, endianness);
         this.position += 8;
     }
-    public void Write(ulong value, int position, Endianness endianness)
+    public void WriteU64(ulong value, int position, Endianness endianness)
     {
         if (endianness == Endianness.BE)
         {

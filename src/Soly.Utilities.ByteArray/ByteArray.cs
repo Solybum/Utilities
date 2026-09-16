@@ -54,7 +54,7 @@ public partial class ByteArray
     public ByteArray(byte[] byteArray, Endianness endianness)
     {
         Guard.IsNotNull(byteArray);
-        
+
         this.buffer = byteArray;
         this.Endianness = endianness;
     }

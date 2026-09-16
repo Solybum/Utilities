@@ -42,11 +42,6 @@ public partial class ByteArray
     }
     public void WriteStringW(string text, int index, int length, bool nullTerminated, int position)
     {
-        if (text == null)
-        {
-            throw new ArgumentNullException(nameof(text));
-        }
-
         length += index;
         while ((index < length) && (index < text.Length))
         {
@@ -65,5 +60,4 @@ public partial class ByteArray
             this.WriteCharW('\0', position);
         }
     }
-
 }

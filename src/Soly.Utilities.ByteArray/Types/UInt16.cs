@@ -33,21 +33,21 @@ public partial class ByteArray
         return result;
     }
 
-    public void Write(ushort value)
+    public void WriteU16(ushort value)
     {
-        this.Write(value, this.position, this.Endianness);
+        this.WriteU16(value, this.position, this.Endianness);
         this.position += 2;
     }
-    public void Write(ushort value, int position)
+    public void WriteU16(ushort value, int position)
     {
-        this.Write(value, position, this.Endianness);
+        this.WriteU16(value, position, this.Endianness);
     }
-    public void Write(ushort value, Endianness endianness)
+    public void WriteU16(ushort value, Endianness endianness)
     {
-        this.Write(value, this.position, endianness);
+        this.WriteU16(value, this.position, endianness);
         this.position += 2;
     }
-    public void Write(ushort value, int position, Endianness endianness)
+    public void WriteU16(ushort value, int position, Endianness endianness)
     {
         if (endianness == Endianness.BE)
         {

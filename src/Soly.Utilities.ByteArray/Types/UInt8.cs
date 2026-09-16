@@ -1,4 +1,4 @@
-﻿namespace Soly.Utilities.ByteArray;
+namespace Soly.Utilities.ByteArray;
 
 public partial class ByteArray
 {
@@ -14,12 +14,12 @@ public partial class ByteArray
         return result;
     }
 
-    public void Write(byte value)
+    public void WriteU8(byte value)
     {
-        this.Write(value, this.position);
+        this.WriteU8(value, this.position);
         this.position += 1;
     }
-    public void Write(byte value, int position)
+    public void WriteU8(byte value, int position)
     {
         this.buffer[position] = value;
     }
